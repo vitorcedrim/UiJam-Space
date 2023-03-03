@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
     <title>Space Notices</title>
 </head>
 <body>
     <header>
         <button>
-            <img src="" alt="Sandwich Menu">
+            <object data="src/svg/notifications_icon.svg"></object>
         </button>
-        <div>
-            <img src="" alt="Profile Picture">
-            <h2>Olá! name_placeholder</h2>
+        <div class="profileHeader">
+            <img src="src/img/profilePic.png" alt="Profile Picture">
+            <h2>Olá, Rosana!</h2>
         </div>
         <button>
-            <img src="" alt="Notifications Icon">
+            <object data="src/svg/sandwich_menu.svg"></object>
         </button>
     </header>
 
     <div class="navbar">
-        <img src="" alt="Magnifier Icon">
-        <input type="text">
+        <object data="src/svg/magnifier_icon.svg"></object>
+        <input type="text" placeholder="Pesquisar notícia">
     </div>
 
     <div class="recent">
-        <h3>Pesquisa recente</h3>
+        <h3>Pesquisas recentes</h3>
         <div class="recentButtons">
-            <button class="latestSearch">
+            <button id="latestSearch">
                 <h3>nasa</h3>
-                <img src="" alt="Delete icon">
             </button>
             <button>
                 <h3>bateria</h3>
-                <img src="" alt="Delete icon">
             </button>
             <button>
                 <h3>planeta</h3>
-                <img src="" alt="Delete icon">
             </button>
             <button>
                 <h3>astronauta</h3>
-                <img src="" alt="Delete icon">
+            </button>
+            <button>
+                <h3>saturno</h3>
+            </button>
+            <button>
+                <h3>spacex</h3>
+            </button>
+            <button>
+                <h3>lua</h3>
             </button>
         </div>
     </div>
@@ -50,8 +59,54 @@
     <main>
         <h1>Descubra novas notícias<br>sobre o sistema solar</h1>
         <div class="blueBar1"></div>
+        <div class="planetSelectorBar">
+            <div class="planetCard">
 
-        
+            </div>
+            <div class="planetCard">
+
+            </div>
+            <div class="planetCard">
+
+            </div>
+            <div class="planetCard">
+
+            </div>
+
+            <div class="planetCard">
+
+            </div>
+        </div>
+        <div class="currentPlanetNewsTitle">
+            <h1>Vênus</h1>
+            <div class="blueBar2"></div>
+        </div>
+        <div class="news">
+            <div class="article">
+                <div class="bigImageBox">
+                    <img src="src/img/venus_volcano.png" alt="News photo">
+                </div>
+                <div class="articleTextBox">
+                    <h3>NASA descobre casca externa "mole" de Vênus provocada por vulcão</h3>
+                    <button>Leia mais</button>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="bigImageBox">
+                    <img src="src/img/battery_photo.png" alt="News photo">
+                </div>
+                <div class="articleTextBox">
+                    <h3>Nova bateria pode revolucionar missões enviadas a Vênus</h3>
+                    <button>Leia mais</button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <img src="src/img/spacenotices_logo.png" alt="Space Notices Logo">
+    </footer>
 </body>
+<script src="main.js"></script>
 </html>
