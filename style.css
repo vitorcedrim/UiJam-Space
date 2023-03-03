@@ -291,9 +291,45 @@ main > h1 {
 .bigImageBox {
     margin-right: 2rem;
     width: 6rem;
+    height: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.littleDot {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: rotation 10s infinite linear;
+    -webkit-animation: rotation 10s infinite linear;
+    top: 58%;
+    left: 8%;
+}
+
+.littleDot::before {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: -15px;
+    top: -10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
 }
 
 .articleTextBox {
